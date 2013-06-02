@@ -8,5 +8,5 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/mmakoto37/WebPay.git", :commit => "b23e5d36bda81bb8591651a9a5bff9ad945db988" }
   s.source_files = 'WebPay', 'WebPay/**/*.{h,m}'
   s.requires_arc = true
-  s.dependency     'JSONKit', '~> 1.4' 
+  s.dependency  'Stripe', :git => 'https://github.com/stripe/stripe-ios.git'
 end
