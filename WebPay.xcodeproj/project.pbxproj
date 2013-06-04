@@ -23,10 +23,12 @@
 		0E301E3C175E263500ACD7CE /* WebPaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E301E3A175E263500ACD7CE /* WebPaymentViewController.m */; };
 		0E301E40175E271E00ACD7CE /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E301E3F175E271E00ACD7CE /* MBProgressHUD.m */; };
 		0E301E41175E271E00ACD7CE /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E301E3F175E271E00ACD7CE /* MBProgressHUD.m */; };
+		0E301F75175E2B6E00ACD7CE /* WebPay.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E301F72175E2B6E00ACD7CE /* WebPay.m */; };
+		0E301F76175E2B6E00ACD7CE /* WebPay.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E301F72175E2B6E00ACD7CE /* WebPay.m */; };
+		0E301F77175E2B6E00ACD7CE /* WebPayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E301F74175E2B6E00ACD7CE /* WebPayView.m */; };
+		0E301F78175E2B6E00ACD7CE /* WebPayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E301F74175E2B6E00ACD7CE /* WebPayView.m */; };
+		0E301F7A175E2B8800ACD7CE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E301F79175E2B8800ACD7CE /* QuartzCore.framework */; };
 		0E6EEE25175BAE5A00846654 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E6EEE24175BAE5A00846654 /* Foundation.framework */; };
-		0E6EEE2A175BAE5A00846654 /* WebPay.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0E6EEE29175BAE5A00846654 /* WebPay.h */; };
-		0E6EEE2C175BAE5A00846654 /* WebPay.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E6EEE2B175BAE5A00846654 /* WebPay.m */; };
-		0E6EEE34175BAEC700846654 /* WebPayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E6EEE33175BAEC700846654 /* WebPayView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,7 +38,6 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
-				0E6EEE2A175BAE5A00846654 /* WebPay.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,13 +64,14 @@
 		0E301E3A175E263500ACD7CE /* WebPaymentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebPaymentViewController.m; sourceTree = "<group>"; };
 		0E301E3E175E271E00ACD7CE /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		0E301E3F175E271E00ACD7CE /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		0E301F71175E2B6E00ACD7CE /* WebPay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebPay.h; sourceTree = "<group>"; };
+		0E301F72175E2B6E00ACD7CE /* WebPay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebPay.m; sourceTree = "<group>"; };
+		0E301F73175E2B6E00ACD7CE /* WebPayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebPayView.h; sourceTree = "<group>"; };
+		0E301F74175E2B6E00ACD7CE /* WebPayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebPayView.m; sourceTree = "<group>"; };
+		0E301F79175E2B8800ACD7CE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		0E6EEE21175BAE5A00846654 /* libWebPay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libWebPay.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E6EEE24175BAE5A00846654 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0E6EEE28175BAE5A00846654 /* WebPay-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WebPay-Prefix.pch"; sourceTree = "<group>"; };
-		0E6EEE29175BAE5A00846654 /* WebPay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebPay.h; sourceTree = "<group>"; };
-		0E6EEE2B175BAE5A00846654 /* WebPay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebPay.m; sourceTree = "<group>"; };
-		0E6EEE32175BAEC700846654 /* WebPayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebPayView.h; sourceTree = "<group>"; };
-		0E6EEE33175BAEC700846654 /* WebPayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebPayView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E301F7A175E2B8800ACD7CE /* QuartzCore.framework in Frameworks */,
 				0E301E17175E24F500ACD7CE /* UIKit.framework in Frameworks */,
 				0E301E18175E24F500ACD7CE /* Foundation.framework in Frameworks */,
 				0E301E1A175E24F500ACD7CE /* CoreGraphics.framework in Frameworks */,
@@ -137,6 +140,7 @@
 		0E6EEE18175BAE5A00846654 = {
 			isa = PBXGroup;
 			children = (
+				0E301F79175E2B8800ACD7CE /* QuartzCore.framework */,
 				0E6EEE26175BAE5A00846654 /* WebPay */,
 				0E301E1B175E24F500ACD7CE /* Example */,
 				0E6EEE23175BAE5A00846654 /* Frameworks */,
@@ -166,10 +170,10 @@
 		0E6EEE26175BAE5A00846654 /* WebPay */ = {
 			isa = PBXGroup;
 			children = (
-				0E6EEE29175BAE5A00846654 /* WebPay.h */,
-				0E6EEE2B175BAE5A00846654 /* WebPay.m */,
-				0E6EEE32175BAEC700846654 /* WebPayView.h */,
-				0E6EEE33175BAEC700846654 /* WebPayView.m */,
+				0E301F71175E2B6E00ACD7CE /* WebPay.h */,
+				0E301F72175E2B6E00ACD7CE /* WebPay.m */,
+				0E301F73175E2B6E00ACD7CE /* WebPayView.h */,
+				0E301F74175E2B6E00ACD7CE /* WebPayView.m */,
 				0E6EEE27175BAE5A00846654 /* Supporting Files */,
 			);
 			path = WebPay;
@@ -273,6 +277,8 @@
 				0E301E2F175E24F500ACD7CE /* ViewController.m in Sources */,
 				0E301E3C175E263500ACD7CE /* WebPaymentViewController.m in Sources */,
 				0E301E41175E271E00ACD7CE /* MBProgressHUD.m in Sources */,
+				0E301F76175E2B6E00ACD7CE /* WebPay.m in Sources */,
+				0E301F78175E2B6E00ACD7CE /* WebPayView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,10 +286,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E6EEE2C175BAE5A00846654 /* WebPay.m in Sources */,
-				0E6EEE34175BAEC700846654 /* WebPayView.m in Sources */,
 				0E301E3B175E263500ACD7CE /* WebPaymentViewController.m in Sources */,
 				0E301E40175E271E00ACD7CE /* MBProgressHUD.m in Sources */,
+				0E301F75175E2B6E00ACD7CE /* WebPay.m in Sources */,
+				0E301F77175E2B6E00ACD7CE /* WebPayView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +437,7 @@
 				0E301E37175E24F500ACD7CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0E6EEE1C175BAE5A00846654 /* Build configuration list for PBXProject "WebPay" */ = {
 			isa = XCConfigurationList;

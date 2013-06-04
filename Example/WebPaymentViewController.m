@@ -12,7 +12,7 @@
 
 @interface WebPaymentViewController ()
 - (void)hasError:(NSError *)error;
-- (void)hasToken:(WebPayToken *)token;
+- (void)hasToken:(STPToken *)token;
 @end
 
 @implementation WebPaymentViewController

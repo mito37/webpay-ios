@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "Stripe.h"
 
-@interface WebPay : NSObject
+@interface WebPay : Stripe
 
 @end
