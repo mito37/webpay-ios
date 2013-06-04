@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Example.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>WebPay.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +17,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>0E301E14175E24F500ACD7CE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>0E6EEE20175BAE5A00846654</key>
 		<dict>
 			<key>primary</key>

@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E301E17175E24F500ACD7CE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E301E16175E24F500ACD7CE /* UIKit.framework */; };
+		0E301E18175E24F500ACD7CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E6EEE24175BAE5A00846654 /* Foundation.framework */; };
+		0E301E1A175E24F500ACD7CE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E301E19175E24F500ACD7CE /* CoreGraphics.framework */; };
+		0E301E20175E24F500ACD7CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0E301E1E175E24F500ACD7CE /* InfoPlist.strings */; };
+		0E301E22175E24F500ACD7CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E301E21175E24F500ACD7CE /* main.m */; };
+		0E301E26175E24F500ACD7CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E301E25175E24F500ACD7CE /* AppDelegate.m */; };
+		0E301E28175E24F500ACD7CE /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E301E27175E24F500ACD7CE /* Default.png */; };
+		0E301E2A175E24F500ACD7CE /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E301E29175E24F500ACD7CE /* Default@2x.png */; };
+		0E301E2C175E24F500ACD7CE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E301E2B175E24F500ACD7CE /* Default-568h@2x.png */; };
+		0E301E2F175E24F500ACD7CE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E301E2E175E24F500ACD7CE /* ViewController.m */; };
+		0E301E32175E24F500ACD7CE /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E301E30175E24F500ACD7CE /* ViewController_iPhone.xib */; };
+		0E301E35175E24F500ACD7CE /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E301E33175E24F500ACD7CE /* ViewController_iPad.xib */; };
+		0E301E3B175E263500ACD7CE /* WebPaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E301E3A175E263500ACD7CE /* WebPaymentViewController.m */; };
+		0E301E3C175E263500ACD7CE /* WebPaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E301E3A175E263500ACD7CE /* WebPaymentViewController.m */; };
+		0E301E40175E271E00ACD7CE /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E301E3F175E271E00ACD7CE /* MBProgressHUD.m */; };
+		0E301E41175E271E00ACD7CE /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E301E3F175E271E00ACD7CE /* MBProgressHUD.m */; };
 		0E6EEE25175BAE5A00846654 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E6EEE24175BAE5A00846654 /* Foundation.framework */; };
 		0E6EEE2A175BAE5A00846654 /* WebPay.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0E6EEE29175BAE5A00846654 /* WebPay.h */; };
 		0E6EEE2C175BAE5A00846654 /* WebPay.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E6EEE2B175BAE5A00846654 /* WebPay.m */; };
@@ -27,6 +43,26 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0E301E15175E24F500ACD7CE /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E301E16175E24F500ACD7CE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0E301E19175E24F500ACD7CE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0E301E1D175E24F500ACD7CE /* Example-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Example-Info.plist"; sourceTree = "<group>"; };
+		0E301E1F175E24F500ACD7CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0E301E21175E24F500ACD7CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0E301E23175E24F500ACD7CE /* Example-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Example-Prefix.pch"; sourceTree = "<group>"; };
+		0E301E24175E24F500ACD7CE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0E301E25175E24F500ACD7CE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0E301E27175E24F500ACD7CE /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		0E301E29175E24F500ACD7CE /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		0E301E2B175E24F500ACD7CE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		0E301E2D175E24F500ACD7CE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0E301E2E175E24F500ACD7CE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0E301E31175E24F500ACD7CE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
+		0E301E34175E24F500ACD7CE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		0E301E39175E263500ACD7CE /* WebPaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebPaymentViewController.h; sourceTree = "<group>"; };
+		0E301E3A175E263500ACD7CE /* WebPaymentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebPaymentViewController.m; sourceTree = "<group>"; };
+		0E301E3E175E271E00ACD7CE /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		0E301E3F175E271E00ACD7CE /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		0E6EEE21175BAE5A00846654 /* libWebPay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libWebPay.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E6EEE24175BAE5A00846654 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0E6EEE28175BAE5A00846654 /* WebPay-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WebPay-Prefix.pch"; sourceTree = "<group>"; };
@@ -37,6 +73,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0E301E12175E24F500ACD7CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E301E17175E24F500ACD7CE /* UIKit.framework in Frameworks */,
+				0E301E18175E24F500ACD7CE /* Foundation.framework in Frameworks */,
+				0E301E1A175E24F500ACD7CE /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0E6EEE1E175BAE5A00846654 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -48,10 +94,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E301E1B175E24F500ACD7CE /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				0E301E3D175E271E00ACD7CE /* MBProgressHUD */,
+				0E301E24175E24F500ACD7CE /* AppDelegate.h */,
+				0E301E25175E24F500ACD7CE /* AppDelegate.m */,
+				0E301E2D175E24F500ACD7CE /* ViewController.h */,
+				0E301E2E175E24F500ACD7CE /* ViewController.m */,
+				0E301E30175E24F500ACD7CE /* ViewController_iPhone.xib */,
+				0E301E33175E24F500ACD7CE /* ViewController_iPad.xib */,
+				0E301E39175E263500ACD7CE /* WebPaymentViewController.h */,
+				0E301E3A175E263500ACD7CE /* WebPaymentViewController.m */,
+				0E301E1C175E24F500ACD7CE /* Supporting Files */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		0E301E1C175E24F500ACD7CE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0E301E1D175E24F500ACD7CE /* Example-Info.plist */,
+				0E301E1E175E24F500ACD7CE /* InfoPlist.strings */,
+				0E301E21175E24F500ACD7CE /* main.m */,
+				0E301E23175E24F500ACD7CE /* Example-Prefix.pch */,
+				0E301E27175E24F500ACD7CE /* Default.png */,
+				0E301E29175E24F500ACD7CE /* Default@2x.png */,
+				0E301E2B175E24F500ACD7CE /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0E301E3D175E271E00ACD7CE /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				0E301E3E175E271E00ACD7CE /* MBProgressHUD.h */,
+				0E301E3F175E271E00ACD7CE /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
 		0E6EEE18175BAE5A00846654 = {
 			isa = PBXGroup;
 			children = (
 				0E6EEE26175BAE5A00846654 /* WebPay */,
+				0E301E1B175E24F500ACD7CE /* Example */,
 				0E6EEE23175BAE5A00846654 /* Frameworks */,
 				0E6EEE22175BAE5A00846654 /* Products */,
 			);
@@ -61,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				0E6EEE21175BAE5A00846654 /* libWebPay.a */,
+				0E301E15175E24F500ACD7CE /* Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,6 +157,8 @@
 			isa = PBXGroup;
 			children = (
 				0E6EEE24175BAE5A00846654 /* Foundation.framework */,
+				0E301E16175E24F500ACD7CE /* UIKit.framework */,
+				0E301E19175E24F500ACD7CE /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -96,6 +186,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0E301E14175E24F500ACD7CE /* Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E301E38175E24F500ACD7CE /* Build configuration list for PBXNativeTarget "Example" */;
+			buildPhases = (
+				0E301E11175E24F500ACD7CE /* Sources */,
+				0E301E12175E24F500ACD7CE /* Frameworks */,
+				0E301E13175E24F500ACD7CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Example;
+			productName = Example;
+			productReference = 0E301E15175E24F500ACD7CE /* Example.app */;
+			productType = "com.apple.product-type.application";
+		};
 		0E6EEE20175BAE5A00846654 /* WebPay */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0E6EEE2F175BAE5A00846654 /* Build configuration list for PBXNativeTarget "WebPay" */;
@@ -135,23 +242,108 @@
 			projectRoot = "";
 			targets = (
 				0E6EEE20175BAE5A00846654 /* WebPay */,
+				0E301E14175E24F500ACD7CE /* Example */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		0E301E13175E24F500ACD7CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E301E20175E24F500ACD7CE /* InfoPlist.strings in Resources */,
+				0E301E28175E24F500ACD7CE /* Default.png in Resources */,
+				0E301E2A175E24F500ACD7CE /* Default@2x.png in Resources */,
+				0E301E2C175E24F500ACD7CE /* Default-568h@2x.png in Resources */,
+				0E301E32175E24F500ACD7CE /* ViewController_iPhone.xib in Resources */,
+				0E301E35175E24F500ACD7CE /* ViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		0E301E11175E24F500ACD7CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E301E22175E24F500ACD7CE /* main.m in Sources */,
+				0E301E26175E24F500ACD7CE /* AppDelegate.m in Sources */,
+				0E301E2F175E24F500ACD7CE /* ViewController.m in Sources */,
+				0E301E3C175E263500ACD7CE /* WebPaymentViewController.m in Sources */,
+				0E301E41175E271E00ACD7CE /* MBProgressHUD.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0E6EEE1D175BAE5A00846654 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0E6EEE2C175BAE5A00846654 /* WebPay.m in Sources */,
 				0E6EEE34175BAEC700846654 /* WebPayView.m in Sources */,
+				0E301E3B175E263500ACD7CE /* WebPaymentViewController.m in Sources */,
+				0E301E40175E271E00ACD7CE /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		0E301E1E175E24F500ACD7CE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0E301E1F175E24F500ACD7CE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0E301E30175E24F500ACD7CE /* ViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0E301E31175E24F500ACD7CE /* en */,
+			);
+			name = ViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		0E301E33175E24F500ACD7CE /* ViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0E301E34175E24F500ACD7CE /* en */,
+			);
+			name = ViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		0E301E36175E24F500ACD7CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Example/Example-Prefix.pch";
+				INFOPLIST_FILE = "Example/Example-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0E301E37175E24F500ACD7CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Example/Example-Prefix.pch";
+				INFOPLIST_FILE = "Example/Example-Info.plist";
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		0E6EEE2D175BAE5A00846654 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -232,6 +424,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0E301E38175E24F500ACD7CE /* Build configuration list for PBXNativeTarget "Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E301E36175E24F500ACD7CE /* Debug */,
+				0E301E37175E24F500ACD7CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		0E6EEE1C175BAE5A00846654 /* Build configuration list for PBXProject "WebPay" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
