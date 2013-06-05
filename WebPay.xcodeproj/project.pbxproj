@@ -237,7 +237,6 @@
 			isa = PBXGroup;
 			children = (
 				0E885425175F800B005FB621 /* Stripe */,
-				0E301F79175E2B8800ACD7CE /* QuartzCore.framework */,
 				0E6EEE26175BAE5A00846654 /* WebPay */,
 				0E301E1B175E24F500ACD7CE /* Example */,
 				0E6EEE23175BAE5A00846654 /* Frameworks */,
@@ -257,6 +256,7 @@
 		0E6EEE23175BAE5A00846654 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0E301F79175E2B8800ACD7CE /* QuartzCore.framework */,
 				0E6EEE24175BAE5A00846654 /* Foundation.framework */,
 				0E301E16175E24F500ACD7CE /* UIKit.framework */,
 				0E301E19175E24F500ACD7CE /* CoreGraphics.framework */,
