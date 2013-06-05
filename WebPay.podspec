@@ -7,6 +7,6 @@ Pod::Spec.new do |s|
   s.author       = { "mmakoto37" => "email@address.com" }
   s.source       = { :git => "https://github.com/mmakoto37/webpay-ios.git"}
   s.source_files        = 'WebPay/**/*.{h,m}'
-  s.public_header_files = 'WebPay/**/*.h'
+  s.public_header_files = 'WebPay/**/*.h', 'stripe-ios/Stripe/**/*.{h,m}'
   s.requires_arc = true
 end
