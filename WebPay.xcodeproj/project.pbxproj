@@ -236,7 +236,6 @@
 		0E6EEE18175BAE5A00846654 = {
 			isa = PBXGroup;
 			children = (
-				0E885425175F800B005FB621 /* Stripe */,
 				0E6EEE26175BAE5A00846654 /* WebPay */,
 				0E301E1B175E24F500ACD7CE /* Example */,
 				0E6EEE23175BAE5A00846654 /* Frameworks */,
@@ -267,6 +266,7 @@
 		0E6EEE26175BAE5A00846654 /* WebPay */ = {
 			isa = PBXGroup;
 			children = (
+				0E885425175F800B005FB621 /* Stripe */,
 				0E301F71175E2B6E00ACD7CE /* WebPay.h */,
 				0E301F72175E2B6E00ACD7CE /* WebPay.m */,
 				0E301F73175E2B6E00ACD7CE /* WebPayView.h */,
@@ -301,7 +301,7 @@
 				0E885431175F800B005FB621 /* Vendor */,
 			);
 			name = Stripe;
-			path = "stripe-ios/Stripe";
+			path = "../stripe-ios/Stripe";
 			sourceTree = "<group>";
 		};
 		0E885431175F800B005FB621 /* Vendor */ = {
