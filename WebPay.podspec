@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => 'MIT', :file => 'FILE_LICENSE' }
   s.author       = { "mmakoto37" => "email@address.com" }
   s.source       = { :git => "https://github.com/mmakoto37/webpay-ios.git", :submodules => 'true' }
-  s.source_files        = 'WebPay/**/*.{h,m}', 'stripe-ios/Stripe/**/*.{h,m}'
-  s.public_header_files = 'WebPay/**/*.h', 'stripe-ios/Stripe/**/*.h'
+  s.source_files        = 'WebPay/**/*.{h,m}'
+  s.public_header_files = 'WebPay/**/*.h''
   s.requires_arc = true
 end
