@@ -78,7 +78,7 @@
     
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:@"https://example.com"]];
     request.HTTPMethod = @"POST";
-    NSString *body     = [NSString stringWithFormat:@"stripeToken=%@", token.tokenId];
+    NSString *body     = [NSString stringWithFormat:@"webpayToken=%@", token.tokenId];
     request.HTTPBody   = [body dataUsingEncoding:NSUTF8StringEncoding];
     
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
