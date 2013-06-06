@@ -7,14 +7,14 @@ WebPay iOSでは、あなたのアプリ内でWebPayの[トークン](https://we
 WebPay iOSを導入する手段は２つあります。
 WebPayは[Stripe](https://stripe.com/)のライブラリに依存しているので、Stripeも同時にインストールする必要があります。
 
-### CocoaPodsを仕様する
+### ・CocoaPodsを使用する
 
 [CocoaPods](http://cocoapods.org/) はiOSのライブラリを管理するためのツールです。 下記のように `Podfile` を編集し `pod install`するだけです。
 
     pod 'Stripe', :git => 'https://github.com/stripe/stripe-ios.git'
     pod 'WebPay', :git => 'https://github.com/mmakoto37/webpay-ios.git'
 
-### プロジェクトに直接インポートする
+### ・プロジェクトに直接インポートする
 
 1. WebPayをクローンする。 (git clone --recursive)
 1. メニューバーのFileをクリックして 'Add files to "Project"...' をする。
