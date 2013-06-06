@@ -9,7 +9,7 @@ WebPayは[Stripe](https://stripe.com/)のライブラリに依存しているの
 
 ### CocoaPodsを仕様する
 
-[CocoaPods](http://cocoapods.org/) はiOSのライブラリを管理するためのツールです。 下記のように `Podfile` を編集し `pod install`するだけです。:
+[CocoaPods](http://cocoapods.org/) はiOSのライブラリを管理するためのツールです。 下記のように `Podfile` を編集し `pod install`するだけです。
 
     pod 'Stripe', :git => 'https://github.com/stripe/stripe-ios.git'
     pod 'WebPay', :git => 'https://github.com/mmakoto37/webpay-ios.git'
@@ -54,7 +54,7 @@ WebPayは[Stripe](https://stripe.com/)のライブラリに依存しているの
 
 
 ## 具体的な使い方について
-### Step1
+### Step1 カードの情報を入力する
 まず初めに、WebPayのインターフェースでは、`QuartzCore.framework`が必要なので、予めインポートしておきます。
 そして、`UIViewController`を継承した、クラス（ここでは`WebPaymentViewController`）のヘッダに`STPView.h`をインポートします（下記参照）。
 
@@ -90,6 +90,61 @@ WebPayは[Stripe](https://stripe.com/)のライブラリに依存しているの
         // self.saveButton.enabled = valid;
     }
     
-すべてのコードは[サンプルコード]()に記載しています。
+すべてのコードは[サンプルコード](https://github.com/mmakoto37/webpay-ios/blob/master/Example/WebPaymentViewController.m)に記載しています。
 
-### Step2
+### Step2 カードに紐付いたトークンを発行する
+Step1で正しいカードの情報と名前を入力して、Saveが押せると下記のコードのように、`createToken`が呼び出されます。
+このメソッドではクレジットカードの情報から、トークンを発行するものとなっています。
+
+    - (IBAction)save:(id)sender
+    {
+        // Call 'createToken' when the save button is tapped
+        [self.stripeView createToken:^(STPToken *token, NSError *error) {
+            if (error) {
+                // Handle error
+                // [self handleError:error];
+            } else {
+                // Send off token to your server
+                // [self handleToken:token];
+            }
+        }];}
+
+重要なことは、クレジットカードの情報が完全に正しいものでない限り、`createToken`を呼ばないようにすることです。
+サンプルアプリでは、`MBProgressHUD`を使ってネットワークエラー時などのアラート処理を行なっています。
+
+    - (void)handleError:(NSError *)error
+    {
+        UIAlertView *message = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error", @"Error")
+                                                          message:[error localizedDescription]
+                                                         delegate:nil
+                                                cancelButtonTitle:NSLocalizedString(@"OK", @"OK")
+                                                otherButtonTitles:nil];
+        [message show];
+    }
+
+### Step3 トークンをサーバーに送る。
+エラーがなく、無事トークンの取得が完了すると、Blocks処理で下記のメソッドが呼ばれます。
+
+    - (void)handleToken:(STPToken *)token
+    {
+      NSLog(@"Received token %@", token.tokenId);
+      NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:@"https://example.com"]];
+      request.HTTPMethod = @"POST";
+      NSString *body     = [NSString stringWithFormat:@"webpayToken=%@", token.tokenId];
+      request.HTTPBody   = [body dataUsingEncoding:NSUTF8StringEncoding];
+      [NSURLConnection sendAsynchronousRequest:request
+                                         queue:[NSOperationQueue mainQueue]
+                             completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
+                                 if (error) {
+                                     // Handle error
+                                 }
+                             }];
+    }
+    
+その結果、webpayTokenというパラメータをもつHTTP POSTリクエストを受け取ることが可能となります。
+サーバーとの通信の際は、盗聴などの防止のため、SSLであることを確認してください。
+以上が、トークン発行までの流れになります。
+
+サンプルコードについては、WebPayをクローン (git clone --recursive)し、Exampleのターゲットを起動することで、確認することが可能です。
+
+
