@@ -53,8 +53,8 @@ WebPayは[Stripe](https://stripe.com/)のライブラリに依存しているの
                      completion:completionHandler];
 
 
-### 具体的な使い方について
-## Step1
+## 具体的な使い方について
+### Step1
 まず初めに、WebPayのインターフェースでは、`QuartzCore.framework`が必要なので、予めインポートする。
 そして、`UIViewController`を継承した、クラス（ここでは`WebPaymentViewController`）のヘッダに`STPView.h`をインポートする（下記参照）。
 
@@ -92,4 +92,4 @@ WebPayは[Stripe](https://stripe.com/)のライブラリに依存しているの
     
 すべてのコードは[サンプルコード]()に記載しています。
 
-## Step2
+### Step2
