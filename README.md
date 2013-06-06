@@ -30,7 +30,7 @@ WebPayは[Stripe](https://stripe.com/)のライブラリに依存しているの
 `STPToken` はクレジットカードに紐付いたトークンを扱うクラスです。このトークンは下記のコードのように、クレジットカードの情報から生成されます。
 `WebPay` は、WebPayのAPIとやり取りをするための静的クラスです。`Stripe`を継承しているクラスです。
 
-### Creating a token
+### トークンの作成
 
     STPCard *card = [[STPCard alloc] init];
     card.number = @"4242424242424242";
@@ -55,8 +55,8 @@ WebPayは[Stripe](https://stripe.com/)のライブラリに依存しているの
 
 ## 具体的な使い方について
 ### Step1
-まず初めに、WebPayのインターフェースでは、`QuartzCore.framework`が必要なので、予めインポートする。
-そして、`UIViewController`を継承した、クラス（ここでは`WebPaymentViewController`）のヘッダに`STPView.h`をインポートする（下記参照）。
+まず初めに、WebPayのインターフェースでは、`QuartzCore.framework`が必要なので、予めインポートしておきます。
+そして、`UIViewController`を継承した、クラス（ここでは`WebPaymentViewController`）のヘッダに`STPView.h`をインポートします（下記参照）。
 
     #import <UIKit/UIKit.h>
     #import "STPView.h"
@@ -64,8 +64,8 @@ WebPayは[Stripe](https://stripe.com/)のライブラリに依存しているの
     @property STPView* stripeView;
     @end
 
-`STPView`クラス型の`stripeView`を宣言し、Delegateに関しても`STPViewDelegate`を設定する。
-そして、`STPView`をインスタンス化し、`addSubView`する。
+`STPView`クラス型の`stripeView`を宣言し、Delegateに関しても`STPViewDelegate`を設定します。
+そして、`STPView`をインスタンス化し、`addSubView`します。
 
     - (void)viewDidLoad
     {
@@ -77,8 +77,8 @@ WebPayは[Stripe](https://stripe.com/)のライブラリに依存しているの
         self.signature = self.textField.text.
     }
 
-この状態で、カードの番号や、セキュリティコードおよび期限日などを取り扱うことができる。
-これに追加で、カードの使用者の名前を入力するフォームも作成する。
+この状態で、カードの番号や、セキュリティコードおよび期限日などを取り扱うことができます。
+これに追加で、カードの使用者の名前を入力するフォームも作成します。
 
 また、ここで[WebPayのダッシュボード](https://webpay.jp/settings)から取得したテスト環境用公開鍵に`WEBPAY_PUBLISHABLE_KEY`を置き換えます。
 
